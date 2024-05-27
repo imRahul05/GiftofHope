@@ -1,0 +1,19 @@
+
+
+.container{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: blanchedalmond;
+}
+#results {
+    font-size: 35px;
+    margin-left: 90px;
+    margin-top: 20px;
+    color: rgb(99, 3, 3);
+
+  }
