@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "219204413138",
+    "project_id": "gifthope-523cb",
+    "storage_bucket": "gifthope-523cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219204413138:android:6c42658b8961fdb669af0b",
+        "android_client_info": {
+          "package_name": "com.example.gifthope"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA81iGqupOFPB_6bcH5rkNq55eH6LIbqFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
