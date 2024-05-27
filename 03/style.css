@@ -1,0 +1,51 @@
+/* body{
+    background-color:bisque;
+}
+#container{
+    align-items: center;
+}
+#clock{
+    width: 100px;
+    height: 70px;
+    border-radius: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+} */
+
+
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+#container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+}
+
+#banner {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#clock {
+    font-size: 2em;
+    font-weight: bold;
+    color: #000;
+}
