@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -42,25 +43,25 @@ class _DonateMoneyPage extends State<DonateMoneyPage> {
   void _handlePaymentSuccess(PaymentSuccessResponse response) {
     Fluttertoast.showToast(
         msg: 'SUCCESS PAYMENT: ${response.paymentId}', timeInSecForIosWeb: 4);
-        _reset();
+    _reset();
   }
 
   void _handlePaymentError(PaymentFailureResponse response) {
     Fluttertoast.showToast(
         msg: "ERROR HERE: ${response.code} - ${response.message}",
         timeInSecForIosWeb: 4);
-        _reset();
+    _reset();
   }
 
   void _handleExternalWallet(ExternalWalletResponse response) {
     Fluttertoast.showToast(
         msg: "ExternalWallet is :${response.walletName}", timeInSecForIosWeb: 4);
-        _reset();
+    _reset();
   }
 
   void makePayment() async {
     var options = {
-      'key': 'rzp_test_CZYobo2wVAc088',
+      'key': dotenv.env['RAZORPAY_API_KEY'],
       'amount': int.parse(_amountController.text) * 100, // amount has to be in paise
       'name': _nameController.text,
       'description': 'Donation',
@@ -114,7 +115,6 @@ class _DonateMoneyPage extends State<DonateMoneyPage> {
                   labelText: 'Name',
                 ),
                 validator: (value) {
-                  // Pattern pattern = r'^[A-Za-z ]+$';
                   RegExp regex = new RegExp(r'[A-Za-z ]+$');
                   if (!regex.hasMatch(value!))
                     return 'Invalid name';
@@ -140,7 +140,6 @@ class _DonateMoneyPage extends State<DonateMoneyPage> {
                   labelText: 'Phone Number',
                 ),
                 validator: (value) {
-                  // Pattern pattern = r'^[0-9]+$';
                   RegExp regex = new RegExp(r'^[0-9]+$');
                   if (!regex.hasMatch(value!))
                     return 'Invalid phone number';
@@ -154,7 +153,6 @@ class _DonateMoneyPage extends State<DonateMoneyPage> {
                   labelText: 'Amount',
                 ),
                 validator: (value) {
-               //   Pattern pattern = r'^[0-9]+$';
                   RegExp regex = new RegExp(r'^[0-9]+$');
                   if (!regex.hasMatch(value!))
                     return 'Invalid amount';
@@ -185,7 +183,3 @@ class _DonateMoneyPage extends State<DonateMoneyPage> {
     _razorpay?.clear(); // this will remove all listeners
   }
 }
-
-// void main() {
-//   runApp(MyApp());
-// }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:gifthope/main.dart';
+import 'package:gifthope/pages/login_page.dart';
+
 
 class SignUpPage extends StatefulWidget {
   SignUpPage({Key? key}) : super(key: key);

@@ -3,6 +3,7 @@ import 'package:gifthope/pages/donate_money.dart';
 import 'package:gifthope/pages/donate_things.dart';
 import 'package:gifthope/pages/items_needed.dart';
 import 'package:gifthope/main.dart';
+import 'package:gifthope/pages/form.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -121,6 +122,16 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => ItemsNeededPage()),
+                  );
+                },
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                child: const Text('Demo_form'),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const demo()),
                   );
                 },
               ),

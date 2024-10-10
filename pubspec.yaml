@@ -21,6 +21,7 @@ dependencies:
   razorpay_flutter: ^1.2.7 
   photo_view: ^0.14.0
   firebase_storage: ^11.5.1
+  flutter_dotenv: ^5.0.2
   
 
 dev_dependencies:

@@ -18,4 +18,3 @@ samples, guidance on mobile development, and a full API reference.
 =======
 # Giftofhope
 A donation android application
->>>>>>> 358379b3aff9245709c7e82b8f0f9ba9d8ad3a11
