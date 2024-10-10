@@ -50,9 +50,13 @@ lib/firebase_options.dart
 
 # Environment variables
 .env
-.dart_tool
-.firebase
-.idea
-.vscode
+.dart_tool/
+.firebase/
+.idea/
+
 build
 .flutter-plugins
+.metadata
+.flutter-plugins-dependencies
+.gitignore
+gifthope.iml
