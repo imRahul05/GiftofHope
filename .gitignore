@@ -42,7 +42,6 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-
 # Firebase related
 firebase.json
 lib/firebase_options.dart
@@ -50,11 +49,11 @@ lib/firebase_options.dart
 
 # Environment variables
 .env
+
+# Additional files and directories to ignore
 .dart_tool/
 .firebase/
 .idea/
-
-build
 .flutter-plugins
 .metadata
 .flutter-plugins-dependencies
